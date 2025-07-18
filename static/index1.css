@@ -1,0 +1,76 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+    background: linear-gradient(to right, #f0f4f8, #d9e8f5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form container */
+.Login {
+    background: #ffffff;
+    padding: 40px 35px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    max-width: 420px;
+    width: 100%;
+}
+
+/* Header */
+.Login h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Input fields */
+.Login input[type="text"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.3s ease;
+}
+
+.Login input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Button styling */
+.Login button {
+    width: 100%;
+    padding: 14px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Login button:hover {
+    background-color: #2980b9;
+}
+
+/* Prediction result */
+.Login h2 {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #2c3e50;
+    text-align: center;
+    font-weight: 500;
+}
