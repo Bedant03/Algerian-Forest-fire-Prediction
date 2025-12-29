@@ -80,7 +80,7 @@ scaler.pkl → fitted StandardScaler
 
 These files are later loaded by the Flask application for inference.
 
-# Project Structure:
+Project Structure:
 
 Forest-Fire-Prediction/
 │
