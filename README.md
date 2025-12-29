@@ -85,17 +85,26 @@ Project Structure:
 Forest-Fire-Prediction/
 │
 ├── notebooks/
+
 │   └── Algerian_forest_fire_model_training.ipynb
+
 │
 ├── models/
+
 │   ├── ridge.pkl
+
 │   └── scaler.pkl
+
 │
 ├── templates/
+
 │   └── index1.html
+
 │
 ├── application.py
+
 ├── requirements.txt
+
 └── README.md
 
 Deployment Overview:
