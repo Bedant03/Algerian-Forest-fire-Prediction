@@ -3,7 +3,7 @@
 This project focuses on building a machine learning regression model to predict the Fire Weather Index (FWI) using meteorological and fire-related features from the Algerian Forest Fires dataset.
 The trained model is later serialized and deployed using a Flask web application for real-time prediction.
 
-Problem Statement
+Problem Statement:
 
 Forest fires are strongly influenced by environmental conditions such as temperature, humidity, wind speed, and moisture indices.
 The goal of this project is to predict the FWI (Fire Weather Index), which represents the intensity and spread potential of fires, using historical weather and fire data.
@@ -25,9 +25,9 @@ Initial inspection showed redundant date-related columns (day, month, year), whi
 The Classes column contained inconsistent string labels such as "fire" and "not fire" with spacing issues.
 This column was cleaned and converted into a binary numerical format where:
 
-1 represents fire
+1->represents fire
 
-0 represents no fire
+0->represents no fire
 
 Correlation analysis was performed using a heatmap.
 Highly correlated features (correlation > 0.85) were identified, and the feature DC was removed to reduce multicollinearity.
@@ -38,13 +38,13 @@ Model Training
 
 Multiple regression models were evaluated:
 
-Linear Regression
+1.Linear Regression
 
-Ridge Regression
+2.Ridge Regression
 
-Lasso Regression
+3.Lasso Regression
 
-ElasticNet Regression
+4.ElasticNet Regression
 
 The dataset was split into training and testing sets using a 75–25 split.
 
@@ -52,25 +52,25 @@ Ridge Regression performed exceptionally well, achieving an R² score of ~0.99 o
 
 ElasticNet performed reasonably well but showed reduced accuracy compared to Ridge.
 
-Model Evaluation
+Model Evaluation:
 
 Model performance was evaluated using:
 
-Mean Absolute Error (MAE)
+1.Mean Absolute Error (MAE)
 
-Mean Squared Error (MSE)
+2.Mean Squared Error (MSE)
 
-Root Mean Squared Error (RMSE)
+3.Root Mean Squared Error (RMSE)
 
-R² Score
+4.R² Score
 
-Repeated K-Fold Cross Validation (5 folds × 3 repeats) was applied to ensure robustness.
+->Repeated K-Fold Cross Validation (5 folds × 3 repeats) was applied to ensure robustness.
 
-Ridge Regression consistently outperformed Linear and Lasso Regression across folds, confirming its suitability for deployment.
+->Ridge Regression consistently outperformed Linear and Lasso Regression across folds, confirming its suitability for deployment.
 
 A baseline MAE was also computed using the mean FWI value, showing that the trained model significantly outperforms a naive baseline.
 
-Model Serialization
+Model Serialization:
 
 After training and validation, the following artifacts were saved using pickle:
 
@@ -80,7 +80,7 @@ scaler.pkl → fitted StandardScaler
 
 These files are later loaded by the Flask application for inference.
 
-Project Structure:
+# Project Structure:
 
 Forest-Fire-Prediction/
 │
