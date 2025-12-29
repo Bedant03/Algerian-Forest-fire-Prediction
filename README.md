@@ -1,4 +1,4 @@
-Algerian Forest Fire Prediction using Ridge Regression
+# Algerian Forest Fire Prediction using Ridge Regression
 
 This project focuses on building a machine learning regression model to predict the Fire Weather Index (FWI) using meteorological and fire-related features from the Algerian Forest Fires dataset.
 The trained model is later serialized and deployed using a Flask web application for real-time prediction.
