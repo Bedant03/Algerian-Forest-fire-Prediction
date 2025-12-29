@@ -80,32 +80,6 @@ scaler.pkl → fitted StandardScaler
 
 These files are later loaded by the Flask application for inference.
 
-Project Structure:
-
-Forest-Fire-Prediction/
-│
-├── notebooks/
-
-│   └── Algerian_forest_fire_model_training.ipynb
-
-│
-├── models/
-│   ├── ridge.pkl
-
-│   └── scaler.pkl
-
-│
-├── templates/
-
-│   └── index1.html
-
-│
-├── application.py
-
-├── requirements.txt
-
-└── README.md
-
 Deployment Overview:
 
 The trained model is deployed using Flask.
