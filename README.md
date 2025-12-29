@@ -90,7 +90,6 @@ Forest-Fire-Prediction/
 
 │
 ├── models/
-
 │   ├── ridge.pkl
 
 │   └── scaler.pkl
