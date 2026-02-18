@@ -4,25 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Algerian Forest Fire Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='index1.css') }}">
 </head>
 
 <body>
-
-    <div class="Login" style="max-width:700px; text-align:center;">
+    <a href="/dashboard" class="dashboard-btn">
+        📊 View Dashboard
+    </a>
+    <div class="Login home-container">
 
         <h1>🔥 Algerian Forest Fire Prediction System</h1>
 
-        <div id="dynamicContent" style="margin-top:20px; font-size:16px; line-height:1.6;"></div>
+        <div id="dynamicContent" class="home-content"></div>
 
-        <button onclick="goToPrediction()" style="margin-top:25px;">
+        <button class="primary-btn" onclick="goToPrediction()">
             Go To Prediction Page
         </button>
 
     </div>
-
     <script src="{{ url_for('static', filename='script.js') }}"></script>
-
 </body>
 
 </html>
